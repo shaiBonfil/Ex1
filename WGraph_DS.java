@@ -92,12 +92,12 @@ public class WGraph_DS implements weighted_graph, java.io.Serializable {
     } // end private class
 
     private HashMap<Integer, node_info> nodes; // collection of the graph nodes
-    private HashMap<Integer, HashMap<node_info, Double>> wGraph; // collection of the graph neighbors
+    private HashMap<Integer, HashMap<node_info, Double>> wGraph; // collection of node neighbors and the weight of the edge
     private int mcCounter = 0;
 
     public WGraph_DS() {
-        nodes = new HashMap<Integer, node_info>(); // collection of the graph nodes
-        wGraph = new HashMap<Integer, HashMap<node_info, Double>>(); // collection of node neighbors and the weight of the edge
+        nodes = new HashMap<Integer, node_info>();
+        wGraph = new HashMap<Integer, HashMap<node_info, Double>>();
         mcCounter = 0;
     }
 
